@@ -118,6 +118,7 @@ class XVIT(nn.Module):
                 norm_layer=norm_layer,
                 global_pool=None,
                 bn_tf=False,
+                num_frames=self.cfg.DATA.NUM_FRAMES,
             )
 
             if self.cfg.XVIT.USE_XVIT:
